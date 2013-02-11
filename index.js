@@ -25,7 +25,7 @@ Arrange.prototype.del = function () {
   return this;
 };
 
-Dal.prototype.clear = function () {
+Arrange.prototype.clear = function () {
   this.nodes.forEach(function (node) {
     while (node.firstChild) {
       node.removeChild(node.firstChild);
