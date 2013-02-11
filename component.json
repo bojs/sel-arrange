@@ -2,9 +2,9 @@
   "name": "arrange",
   "repo": "bojs/arrange",
   "description": "arrange nodes through the dom tree",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "dependencies": {
-    "sel": "*"
+    "bojs/sel": "*"
   },
   "scripts": ["index.js"],
   "keywords": ["dom", "arrange", "tree", "nodes"],
