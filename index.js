@@ -11,11 +11,5 @@ var arrange = module.exports = {
     while (node.firstChild) {
       node.removeChild(node.firstChild);
     }
-  },
-  copy: function (args) {
-    args.nodes[args.index] = node.cloneNode(false);
-  },
-  clone: function (args) {
-    args.nodes[args.index] = node.cloneNode(true);
   }
 };

@@ -2,7 +2,7 @@
   "name": "sel-arrange",
   "repo": "bojs/sel-arrange",
   "description": "arrange nodes through the dom tree",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "dependencies": {},
   "scripts": ["index.js"],
   "keywords": ["dom", "arrange", "tree", "nodes"],
