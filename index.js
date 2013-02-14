@@ -1,4 +1,6 @@
-module.exports = {
+module.exports = arrange;
+
+var arrange = {
   moveTo: function (args) {
     args.sel(args.id).appendChild(args.node);
   },
@@ -17,5 +19,5 @@ module.exports = {
   },
   clone: function (args) {
     args.nodes[args.index] = node.cloneNode(true);
-  },
+  }
 };
