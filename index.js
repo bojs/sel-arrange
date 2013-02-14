@@ -1,6 +1,4 @@
-module.exports = arrange;
-
-var arrange = {
+var arrange = module.exports = {
   moveTo: function (args) {
     args.sel(args.id).appendChild(args.node);
   },
