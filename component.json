@@ -2,8 +2,8 @@
   "name": "sel-arrange",
   "repo": "bojs/sel-arrange",
   "description": "arrange nodes through the dom tree",
-  "version": "0.3.0",
-  "dependencies": {},
+  "version": "0.4.0",
+  "dependencies": { "corejs/type": "*" },
   "scripts": ["index.js"],
   "keywords": ["dom", "arrange", "tree", "nodes"],
   "license": "MIT"
