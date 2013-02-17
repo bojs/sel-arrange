@@ -2,8 +2,13 @@ var type = require('type');
 
 var arrange = module.exports = {
   move: function (args) {
-    var to = args.to;
-    (type(to).isString() ? args.sel(to) : to).appendChild(args.node);
+    (function (target) {
+      if (type(target).isString()) {
+        return args.sel(target).first();
+      } else if (target instanceof Sel) {
+        return target.first();
+      } else return target;
+    })(args.to).appendChild(args.node);
   },
   del: function (args) {
     var node = args.node;
