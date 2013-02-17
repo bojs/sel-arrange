@@ -2,7 +2,11 @@ var type = require('type');
 
 var arrange = module.exports = {
   move: function (args) {
-    args.to.first().appendChild(args.node);
+    var node = args.to.first();
+    node.appendChild(args.node);
+    if (args.relative) {
+      node.style.position = 'relative';
+    }
   },
   del: function (args) {
     var node = args.node;
